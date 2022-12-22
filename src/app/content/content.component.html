@@ -1,0 +1,15 @@
+<div class="container-fluid mt-lg-5">
+    <div class="cursos-disponiveis">
+       <h2 class="curso-title text-center">Cursos Disponveis</h2>
+       <div class="cursos">
+        <div *ngFor="let curso of cursosDisponiveis" class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="'../../assets/ben-white.jpeg'" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{curso.nomeCurso}}</h5>
+              <p class="card-text">{{curso.descricao}}</p>
+              <a href="#" class="btn btn-primary">Saber mais</a>
+            </div>
+          </div>
+       </div>
+    </div>
+</div>
